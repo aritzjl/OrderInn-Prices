@@ -1,5 +1,6 @@
 # Sistema de Predicción de Precios para [OrderInn](https://home.orderinn.com/)
-![image](https://github.com/aritzjl/Order-INN-Prices/assets/129123101/90a7c827-b99b-47b2-96c6-b3c0c3a55938)
+![image](https://github.com/aritzjl/OrderInn-Prices-Public/assets/129123101/26701840-89f6-47a2-86fe-4bcf276496ad)
+
 
 Este proyecto se ha desarrollado para la empresa [OrderInn](https://home.orderinn.com/) con el objetivo de automatizar la generación de precios para nuevos productos listados en un archivo Excel. Utiliza un modelo de machine learning entrenado para predecir precios basados en datos históricos. Además, incluye una funcionalidad única que permite actualizar el propio programa mediante instrucciones de IA, a través de una interfaz de chat que utiliza la API de GPT. Este sistema está implementado en un entorno web utilizando Django.
 
@@ -58,7 +59,8 @@ python manage.py runserver
 ## **Uso**
 
 ### **Crear una Predicción**
-![image](https://github.com/aritzjl/Order-INN-Prices/assets/129123101/cd297b5b-3b57-4fce-abc1-8ca369a70039)
+![image](https://github.com/aritzjl/OrderInn-Prices-Public/assets/129123101/acdaa267-0da0-4d22-9e62-0f8914a51e57)
+
 
 1. Inicia sesión en la interfaz web.
 2. Navega a la sección de 'Crear Predicción'.
@@ -66,14 +68,16 @@ python manage.py runserver
 4. El sistema generará automáticamente los precios y los subirá a AWS S3.
 
 ### **Entrenar el Modelo**
-![image](https://github.com/aritzjl/Order-INN-Prices/assets/129123101/80a0ba99-9f91-43ca-9e29-43fa39df0a10)
+![image](https://github.com/aritzjl/OrderInn-Prices-Public/assets/129123101/c55ee2da-d6e1-45f2-9ebd-ff90de0d4b32)
+
 
 1. Accede a la sección 'Entrenar Modelo'.
 2. Sube el archivo Excel de entrenamiento.
 3. El sistema entrenará un nuevo modelo y lo guardará para futuras predicciones.
 
 ### **Actualizar el Programa**
-![image](https://github.com/aritzjl/Order-INN-Prices/assets/129123101/d2acf994-fa54-445f-85e0-4c25a97412cd)
+![image](https://github.com/aritzjl/OrderInn-Prices-Public/assets/129123101/12141e96-aa82-4b05-80fb-22e798a18b79)
+
 
 1. Utiliza la interfaz de chat para describir las actualizaciones deseadas.
 2. La IA procesará la solicitud y generará una nueva versión del programa.
