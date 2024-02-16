@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply bg-burgundy text-white min-w-max w-full font-medium rounded-full py-1.5 transition-colors hover:bg-light-burgundy;
+}

@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{% static 'css/output.css' %}" rel="stylesheet">
+	<title>ORDER INN - Descartar Última Versión</title>
+</head>
+
+<body class="h-screen">
+	<main class="flex items-center justify-center w-full h-full">
+		<article class="w-11/12 px-4 py-12 border rounded-lg shadow sm:px-16 sm:w-8/12 md:w-6/12 lg:w-5/12">
+			<section class="text-center mb-7">
+				<h2 class="mb-2 text-3xl font-bold">Descartar Última Versión</h2>
+				<span>Introduce el motivo de descarte</span>
+			</section>
+			<form action="{% url 'descartar' %}" method="post" enctype="multipart/form-data" class="flex flex-col gap-y-3">
+				{% csrf_token %}
+				<div class="flex flex-col gap-y-2">
+					<label for="motivo" class="text-sm font-semibold whitespace-nowrap">Motivo de descarte</label>
+					<textarea id="motivo" name="motivo" class="border border-solid border-gray-300 rounded-lg focus-visible:outline-none px-3 py-1.5 transition-colors focus:border-burgundy" rows="4" cols="50" placeholder="Introduce el motivo de descarte" autocomplete="on"></textarea>
+				</div>
+				<button type="submit" class="btn">
+					Enviar
+				</button>
+			</form>
+		</article>
+	</main>
+</body>
+
+</html>

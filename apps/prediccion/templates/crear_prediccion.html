@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crear Predicción</title>
+	<link href="{% static 'css/output.css' %}" rel="stylesheet">
+</head>
+
+<body class="h-screen">
+	<main class="flex items-center justify-center w-full h-full">
+		<article class="w-11/12 px-6 py-8 border rounded-lg shadow md:w-6/12 lg:w-4/12 md:px-10 md:py-12">
+			<h1 class="mb-6 text-3xl font-bold text-center">Crear Predicción</h1>
+			<form method="post" enctype="multipart/form-data" action="{% url 'crear_prediccion' %}" class="flex flex-col gap-y-4">
+				{% csrf_token %}
+				<div class="flex flex-col gap-y-2">
+					<label for="prediction_excel" class="text-sm font-semibold">Introduce el archivo Excel para predecir sus precios</label>
+					<input type="file" name="prediction_excel" id="prediction_excel" class="block w-full text-sm border border-gray-200 rounded-lg shadow-sm focus:z-10 focus:border-burgundy focus:ring-burgundy disabled:opacity-50 disabled:pointer-events-none file:border-0 file:bg-gray-100 file:me-4 file:py-2 file:px-4">
+				</div>
+				<button type="submit" class="btn">
+					Crear
+				</button>
+			</form>
+		</article>
+	</main>
+</body>
+
+</html>
