@@ -83,4 +83,6 @@ python manage.py runserver
 2. La IA procesará la solicitud y generará una nueva versión del programa.
 
 ### **Historial de Actualizaciones**
+![image](https://github.com/aritzjl/OrderInn-Prices-Public/assets/129123101/5465d8ac-29f3-4224-98b7-4654969c21a3)
+
 En esta sección, los usuarios pueden ver el historial de las actualizaciones solicitadas a la IA
