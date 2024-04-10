@@ -81,3 +81,6 @@ python manage.py runserver
 
 1. Utiliza la interfaz de chat para describir las actualizaciones deseadas.
 2. La IA procesará la solicitud y generará una nueva versión del programa.
+
+### **Historial de Actualizaciones**
+En esta sección, los usuarios pueden ver el historial de las actualizaciones solicitadas a la IA
